@@ -1,3 +1,3 @@
-const fs = require('fs');
+import { writeFileSync } from 'fs';
 
-fs.writeFileSync( './.env' , `API=${process.env.API}\n`)
+writeFileSync( './.env' , `API=${process.env.API}\n`)
